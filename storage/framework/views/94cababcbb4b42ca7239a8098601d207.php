@@ -94,7 +94,7 @@
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-end" style="background-color: #141931;" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/derivadaParcial">Derivada Parcial</a>
-                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/calculoFuncionesVectoriales">Vector gradiente y<br> Derivada Direccional</a>
+                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/vectorGradiente">Vector gradiente y<br> Derivada Direccional</a>
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/funcionesMultivariables">Extremos de <br>Funciones Multivariables</a>
                                 </div>
                             </li>
@@ -125,7 +125,6 @@
                             <ul class="nav nav-tabs" role="tablist" >
                                 <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VID">Valores Críticos</a></li>
                                 <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DR">Maximos y Minimos de una Función</a></li>
-                                <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RF">Extremos con y sin restricciones</a></li>
                             </ul>
                             <div class="tab-content" style="width:100%">
                                 <div id="VID" class="containe tab-pane active">
@@ -162,25 +161,6 @@
                                             <br>
                                         </div>
                                         <div id="DRE2" class="containe tab-pane fade">
-                                            <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="RF" class="containe tab-pane">
-                                    <br>
-                                    <ul class="nav nav-tabs" role="tablist" >
-                                        <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#RFD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RFE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RFE2">Ejercicios</a></li>
-                                    </ul>
-                                    <div class="tab-content" style="width:100%">
-                                        <div id="RFD" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="RFE1" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="RFE2" class="containe tab-pane fade">
                                             <br>
                                         </div>
                                     </div>
@@ -236,7 +216,7 @@
                                 </li>
                                 <br>
                                 <li>
-                                    <a href="/calculoFuncionesVectoriales">Vector gradiente <br>y Derivada Direccional</a>
+                                    <a href="/vectorGradiente">Vector gradiente <br>y Derivada Direccional</a>
                                 </li>
                                 <br>
                                 <li>

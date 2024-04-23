@@ -24,6 +24,10 @@
             a:hover{
                 color:#0167bb;
             }
+            a.listheader:hover{
+                color:#0167bb;
+                background:#fff;
+            }
             .card{
                 width: 98%;
                 border-style: solid;
@@ -43,6 +47,7 @@
                 font-family: Montserrat;
                 font-size: 16px; 
                 padding: 10px 10px;  
+                background-color: #202020; 
             }
             .bodyMobile{
                 display: block;
@@ -91,8 +96,7 @@
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-end" style="background-color: #141931;" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/derivadaParcial">Derivada Parcial</a>
-                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/calculoFuncionesVectoriales">Vector gradiente y<br> Derivada Direccional</a>
-                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/funcionesMultivariables">Extremos de <br>Funciones Multivariables</a>
+                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/vectorGradiente">Vector gradiente y<br> Derivada Direccional</a>
                                 </div>
                             </li>
                         </ul>
@@ -198,12 +202,10 @@
                                 </li>
                                 <br>
                                 <li>
-                                    <a href="/calculoFuncionesVectoriales">Vector gradiente <br>y Derivada Direccional</a>
+                                    <a href="/vectorGradiente">Vector gradiente <br>y Derivada Direccional</a>
                                 </li>
                                 <br>
-                                <li>
-                                    <a href="/funcionesMultivariables">Extremos de Funciones<br> Multivariables</a>
-                                </li>
+
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">

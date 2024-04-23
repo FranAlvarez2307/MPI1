@@ -46,9 +46,6 @@ Route::get('/funcionesEscalables', function () {
 Route::get('/derivadaParcial', function () {
     return view('Derivadas.DerivadaParcial');
 });
-Route::get('/funcionesMultivariables', function () {
-    return view('Derivadas.FuncionesMultivariables');
-});
 Route::get('/vectorGradiente', function () {
     return view('Derivadas.VectorGradianteDerivadaDireccional');
 });

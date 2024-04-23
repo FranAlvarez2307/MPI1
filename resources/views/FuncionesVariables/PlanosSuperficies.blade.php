@@ -24,9 +24,11 @@
             a:hover{
                 color:#0167bb;
             }
-            a.listheader{
-                color:#000
+            a.listheader:hover{
+                color:#0167bb;
+                background:#fff;
             }
+
             .card{
                 width: 98%;
                 border-style: solid;
@@ -46,6 +48,7 @@
                 font-family: Montserrat;
                 font-size: 16px; 
                 padding: 10px 10px;  
+                background-color: #202020; 
             }
             .bodyMobile{
                 display: block;
@@ -54,6 +57,24 @@
                 transition: 0s;
                 padding-top: 60px;
                 background-color: #141931; 
+            }
+            h1{
+                color:#fff;
+                text-align: center;
+            }
+            p{
+                margin: 30px 80px;
+                color:#fff;
+                font-size: 30px;
+                text-align: justify;
+            }
+            img.examples{
+                width:20%;
+                margin-left:40%
+            }
+            img.examples2{
+                width:80%;
+                margin-left:10%
             }
         </style>
     </head>
@@ -95,7 +116,6 @@
                                 <div class="dropdown-menu dropdown-menu-end" style="background-color: #141931;" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/derivadaParcial">Derivada Parcial</a>
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/vectorGradiente">Vector gradiente y<br> Derivada Direccional</a>
-                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/funcionesMultivariables">Extremos de <br>Funciones Multivariables</a>
                                 </div>
                             </li>
                         </ul>
@@ -123,7 +143,6 @@
                         <div class="card-body">
                             <ul class="nav nav-tabs" role="tablist" >
                                 <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VID">Geometria en 3 Dimensiones</a></li>
-                                <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DR">Planos</a></li>
                                 <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RF">Superficies Cuadráticas</a></li>
                             </ul>
                             <div class="tab-content" style="width:100%">
@@ -132,36 +151,18 @@
                                     <ul class="nav nav-tabs" role="tablist" >
                                         <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VIDD">Definición</a></li>
                                         <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#VIDE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#VIDE2">Ejercicios</a></li>
                                     </ul>
                                     <div class="tab-content" style="width:100%">
                                         <div id="VIDD" class="containe tab-pane active">
                                             <br>
+                                            <h1>Definición</h1>
+                                            <p>La geometría en tres dimensiones consiste en el estudio de las formas y figuras en el espacio tridimensional. A diferencia de la geometría plana, que se ocupa de figuras bidimensionales como puntos, líneas y polígonos en un plano, la geometría tridimensional considera objetos que tienen longitud, anchura y altura.<br><br>Conceptos Fundamentales:<br><br>- Puntos en el espacio: Un punto en el espacio tridimensional está definido por tres coordenadas (X,Y,Z) que representan su posición en los ejes X, Y y Z.<br><br>- Planos: Un plano en el espacio tridimensional es una superficie bidimensional infinita que se extiende en todas las direcciones. Está definido por una ecuación que involucra las coordenadas X, Y y Z.<br><br>- Figuras tridimensionales: Estas incluyen sólidos como cubos, prismas, pirámides, conos, cilindros y esferas. Cada uno de estos sólidos tiene características únicas como caras, vértices y aristas.</p>
                                         </div>
-                                        <div id="VIDE1" class="containe tab-pane active">
+                                        <div id="VIDE1" class="containe tab-pane">
                                             <br>
-                                        </div>
-                                        <div id="VIDE2" class="containe tab-pane fade">
-                                            <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="DR" class="containe tab-pane">
-                                    <br>
-                                    <ul class="nav nav-tabs" role="tablist" >
-                                        <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#DRD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DRE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DRE2">Ejercicios</a></li>
-                                    </ul>
-                                    <div class="tab-content" style="width:100%">
-                                        <div id="DRD" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="DRE1" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="DRE2" class="containe tab-pane fade">
-                                            <br>
+                                            <h1>Ejemplo</h1>
+                                            <p>Aquí podemos observar como se ve un plano cartesiano en un software de graficado como seria GeoGebra, que nos permitirá visualizar las distintas formas resultantes de la funciones de tres variables.</p>
+                                            <img src="/images/cartesiano3.png" style="margin-left:18%">
                                         </div>
                                     </div>
                                 </div>
@@ -175,12 +176,36 @@
                                     <div class="tab-content" style="width:100%">
                                         <div id="RFD" class="containe tab-pane active">
                                             <br>
+                                            <h1>Definición</h1>
+                                            <p>Dentro de las diferentes formas que se pueden realizar en un plano tridimensional podemos encontrar las siguientes:<p>- Planos: Un plano en el espacio tridimensional es una superficie plana que se extiende infinitamente en todas las direcciones. Se puede describir mediante una ecuación Ax+By+Cz+D=0, donde A, B, C y D son constantes. Esta ecuación indica que cualquier punto (X,Y,Z) que satisfaga esta relación pertenece al plano.</p><p>- Elipsoides: Un elipsoide es una figura tridimensional similar a una esfera, pero elongada en una o más direcciones. Se puede definir mediante la ecuación mostrada abajo, donde a, b y c son las longitudes de los semiejes en las direcciones x, y y z, respectivamente.</p><img src="/images/ElipsoideF.png" class="examples"><p>- Cono: Un cono es un sólido tridimensional que tiene una base circular y un solo vértice. Se puede definir mediante una ecuación de la forma mostrada abajo, donde a y b son los radios de la base del cono y c es la altura del cono.</p><img src="/images/ConoF.png" class="examples"><p>- Paraboloides: Los paraboloides son superficies tridimensionales que tienen la forma de un paraboloide de revolución. Hay dos tipos principales de paraboloides:</p><p>• Paraboloide elíptico: Se puede definir mediante una ecuación de la forma:</p><img src="/images/ParaboloideEF.png" class="examples"><p>• Paraboloide hiperbólico: Se puede definir mediante una ecuación de la forma:</p><img src="/images/ParaboloideHF.png" class="examples"><p>- Hiperboloides de una y dos hojas: Los hiperboloides son superficies tridimensionales que pueden tener una o dos hojas, dependiendo de la forma de la ecuación. Hay dos tipos principales de hiperboloides:</p><p>• Hiperboloide de una hoja: Se puede definir mediante una ecuación de la forma:</p><img src="/images/Hiperboloide1F.png" class="examples"><p>• Hiperboloide de dos hojas: Se puede definir mediante una ecuación de la forma:</p><img src="/images/Hiperboloide2F.png" class="examples">
                                         </div>
-                                        <div id="RFE1" class="containe tab-pane active">
+                                        <div id="RFE1" class="containe tab-pane">
                                             <br>
+                                            <h1>Ejemplos</h1>
+                                            <p>Las siguientes imagenes tomadas en GeoGebra son ejemplos de las diferentes formas generadas por una función que corresponde a dicha figura:</p><p>Plano:</p><img src="/images/plano.png" class="examples2"><p>Elipsoide:</p><img src="/images/Elipsoide.png" class="examples2"><p>Cono:</p><img src="/images/Cono.png" class="examples2"><p>Paraboloide Elíptico:</p><img src="/images/Paraboloide.png" class="examples2"><p>Paraboloide Hiperbólico:</p><img src="/images/ParaboloideHiperbolico.png" class="examples2"><p>Hiperboloide Una Hoja:</p><img src="/images/Hiperboloide1.png" class="examples2"><p>Hiperboloide Dos Hojas:</p><img src="/images/Hiperboloide2.png" class="examples2">
                                         </div>
                                         <div id="RFE2" class="containe tab-pane fade">
                                             <br>
+                                            <h1>Ejercicios</h1>
+                                            <p>Identifica que tipo de forma tienen cada una de las siguientes funciones:</p>
+                                            <div style="display:flex">
+                                                <div>
+                                                    <p>1:<img src="/images/1.png"></p>
+                                                    <p>2:<img src="/images/2.png"></p>
+                                                    <p>3:<img src="/images/3.png"></p>
+                                                    <p>4:<img src="/images/4.png"></p>
+                                                    <p>5:<img src="/images/5.png"></p>
+                                                    <p>6:<img src="/images/6.png"></p>
+                                                </div>
+                                                <div style="margin-left:25%">
+                                                    <p>7:<img src="/images/7.png"></p>
+                                                    <p>8:<img src="/images/8.png"></p>
+                                                    <p>9:<img src="/images/9.png"></p>
+                                                    <p>10:<img src="/images/10.png"></p>
+                                                    <p>11:<img src="/images/11.png"></p>
+                                                    <p>12:<img src="/images/12.png"></p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -238,9 +263,7 @@
                                     <a href="/vectorGradiente">Vector gradiente <br>y Derivada Direccional</a>
                                 </li>
                                 <br>
-                                <li>
-                                    <a href="/funcionesMultivariables">Extremos de Funciones<br> Multivariables</a>
-                                </li>
+
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">

@@ -24,9 +24,11 @@
             a:hover{
                 color:#0167bb;
             }
-            a.listheader{
-                color:#000
+            a.listheader:hover{
+                color:#0167bb;
+                background:#fff;
             }
+
             .card{
                 width: 98%;
                 border-style: solid;
@@ -46,6 +48,7 @@
                 font-family: Montserrat;
                 font-size: 16px; 
                 padding: 10px 10px;  
+                background-color: #202020; 
             }
             .bodyMobile{
                 display: block;
@@ -54,6 +57,20 @@
                 transition: 0s;
                 padding-top: 60px;
                 background-color: #141931; 
+            }
+            h1{
+                color:#fff;
+                text-align: center;
+            }
+            p{
+                margin: 30px 80px;
+                color:#fff;
+                font-size: 30px;
+                text-align: justify;
+            }
+            img.examples{
+                width:20%;
+                margin:30px 40%
             }
         </style>
     </head>
@@ -95,7 +112,6 @@
                                 <div class="dropdown-menu dropdown-menu-end" style="background-color: #141931;" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/derivadaParcial">Derivada Parcial</a>
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/vectorGradiente">Vector gradiente y<br> Derivada Direccional</a>
-                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/funcionesMultivariables">Extremos de <br>Funciones Multivariables</a>
                                 </div>
                             </li>
                         </ul>
@@ -122,9 +138,8 @@
                         </div>
                         <div class="card-body">
                             <ul class="nav nav-tabs" role="tablist" >
-                                <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VID">Integral Iterada Doble y Triple</a></li>
-                                <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DR">El Teorema de Fubini</a></li>
-                                <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RF">Métodos de Resolución</a></li>
+                                <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VID">Integral Iterada Doble</a></li>
+                                <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DR">Integral Iterada Triple</a></li>
                             </ul>
                             <div class="tab-content" style="width:100%">
                                 <div id="VID" class="containe tab-pane active">
@@ -137,12 +152,18 @@
                                     <div class="tab-content" style="width:100%">
                                         <div id="VIDD" class="containe tab-pane active">
                                             <br>
+                                            <h1>Integral Iterada Doble</h1>
+                                            <p>Una integral doble se utiliza para calcular el area bajo una superficie en un plano xy o la masa o el centroide de una lámina bidimensional. La integral doble de una función f(x,y) sobre un dominio D en el plano xy se denota como:</p><img src="/images/int1.png" class="examples"><p>Para evaluar una integral doble, se divide el dominio D en regiones más pequeñas, se aproxima la función f(x,y) en cada región y luego se suma el producto de la función aproximada y el área de cada región. Este proceso se conoce como integración doble por suma de Riemann.</p>
                                         </div>
-                                        <div id="VIDE1" class="containe tab-pane active">
+                                        <div id="VIDE1" class="containe tab-pane">
                                             <br>
+                                            <h1>Ejemplo</h1>
+                                            <p>Para este ejemplo buscamos calcular el área de una region delimitada por dos curvas <img src="/images/int3.png"> en un plano xy. Para obtener el area primero debemos de  visualizar la región D que queremos evaluar, por ello si se nos dice que la región se define <img src="/images/int4.png">, la nuestra integral quedaria de la siguiente manera: <img src="/images/int5.png">, apartir de esto comenzamos a integrar.</p><p>1. El primer paso consiste en integrar desde adentro hacia afuera, por lo cual, empezamos integrando la variable y, para despues sustituir las variables que nos da la integral definida:</p><img src="/images/int6.png" class="examples"><p>2. El segundo paso integramos con respecto a la variable faltante que en este caso seria x</p><img src="/images/int7.png" class="examples"><p>Por lo que podemos concluir que el área de la región D es 4/3.</p>
                                         </div>
                                         <div id="VIDE2" class="containe tab-pane fade">
                                             <br>
+                                            <h1>Ejercicio</h1>
+                                            <p>Obten de dominio D de un área de la región delimitada por las curvas <img src="/images/int13.png"> en el plano xy y ademas calcula el área resultante.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -156,31 +177,18 @@
                                     <div class="tab-content" style="width:100%">
                                         <div id="DRD" class="containe tab-pane active">
                                             <br>
+                                            <h1>Integral Iterada Triple</h1>
+                                            <p>Una integral triple se utiliza para calcular el volumen bajo una superficie en el espacio tridimensional o la masa o el centroide de un sólido tridimensional. La integral triple de una función f(x,y,z) sobre un dominio D en el espacio tridimensional se denota como:</p><img src="/images/int2.png" class="examples"><p>Al igual que con las integrales dobles, para evaluar una integral triple, se divide el dominio D en regiones más pequeñas, se aproxima la función f(x,y,z) en cada región y luego se suma el producto de la función aproximada y el volumen de cada región.</p>
                                         </div>
-                                        <div id="DRE1" class="containe tab-pane active">
+                                        <div id="DRE1" class="containe tab-pane">
                                             <br>
+                                            <h1>Ejemplo</h1>
+                                            <p>Queremos calcular el volumen de un sólido que esta encerrado por los planos x = 0, y = 0, z = 0 y x + y + z = 1. Este sólido es un tatraedro con vértices en los puntos (0,0,0), (1,0,0), (0,1,0) y (0,0,1). Donde V es el volumen o el dominio D delimitado por los planos</p><p>Tomando en cuenta todo lo anterior nos queria nuestra integral de la siguiente manera:</p><img src="/images/int8.png" class="examples"><p>Con nuestra integral ya establecida, comenzamos a realizarla por pasos:</p><p>1. Igual que la integral doble, comenzamos a integrar desde adentro hacia afuera, primero integrando x y luego sustituyendo los valores que nos indica la integral definida.</p><img src="/images/int9.png" class="examples"><p>2. Despues continuamos integrando la siguiente variable que en este caso seria la y, para despues sustituir los valores que nos indica la integral definida.</p><img src="/images/int10.png" class="examples"><img src="/images/int11.png" class="examples"><p>3. Finalmente repetimos el procedimiento con la variable faltante que seria la z.</p><img src="/images/int12.png" class="examples">
                                         </div>
                                         <div id="DRE2" class="containe tab-pane fade">
                                             <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="RF" class="containe tab-pane">
-                                    <br>
-                                    <ul class="nav nav-tabs" role="tablist" >
-                                        <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#RFD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RFE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RFE2">Ejercicios</a></li>
-                                    </ul>
-                                    <div class="tab-content" style="width:100%">
-                                        <div id="RFD" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="RFE1" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="RFE2" class="containe tab-pane fade">
-                                            <br>
+                                            <h1>Ejercicio</h1>
+                                            <p>Calcula el Volumen del sólido encerrado por los planos x = 0, y = 0, z = 0 y x + y + z = 2 en el plano tridimensional.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -239,9 +247,7 @@
                                     <a href="/vectorGradiente">Vector gradiente <br>y Derivada Direccional</a>
                                 </li>
                                 <br>
-                                <li>
-                                    <a href="/funcionesMultivariables">Extremos de Funciones<br> Multivariables</a>
-                                </li>
+
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">

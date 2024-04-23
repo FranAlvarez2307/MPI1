@@ -24,8 +24,9 @@
             a:hover{
                 color:#0167bb;
             }
-            a.listheader{
-                color:#000
+            a.listheader:hover{
+                color:#0167bb;
+                background:#fff;
             }
             .card{
                 width: 98%;
@@ -46,6 +47,7 @@
                 font-family: Montserrat;
                 font-size: 16px; 
                 padding: 10px 10px;  
+                background-color: #202020; 
             }
             .bodyMobile{
                 display: block;
@@ -54,6 +56,23 @@
                 transition: 0s;
                 padding-top: 60px;
                 background-color: #141931; 
+            }h1{
+                color:#fff;
+                text-align: center;
+            }
+            h2{
+                color:#fff;
+                margin-left:80px;
+            }
+            p{
+                margin: 30px 80px;
+                color:#fff;
+                font-size: 30px;
+                text-align: justify;
+            }
+            img.examples{
+                width:40%;
+                margin:30px 32%
             }
         </style>
     </head>
@@ -94,8 +113,7 @@
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-end" style="background-color: #141931;" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/derivadaParcial">Derivada Parcial</a>
-                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/calculoFuncionesVectoriales">Vector gradiente y<br> Derivada Direccional</a>
-                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/funcionesMultivariables">Extremos de <br>Funciones Multivariables</a>
+                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/vectorGradiente">Vector gradiente y<br> Derivada Direccional</a>
                                 </div>
                             </li>
                         </ul>
@@ -125,25 +143,19 @@
                             <ul class="nav nav-tabs" role="tablist" >
                                 <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VID">Uso de la Integral Doble</a></li>
                                 <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DR">Tipos de Regiones</a></li>
-                                <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RF">Calculo de Área</a></li>
                             </ul>
                             <div class="tab-content" style="width:100%">
                                 <div id="VID" class="containe tab-pane active">
                                     <br>
                                     <ul class="nav nav-tabs" role="tablist" >
                                         <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VIDD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#VIDE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#VIDE2">Ejercicios</a></li>
                                     </ul>
                                     <div class="tab-content" style="width:100%">
                                         <div id="VIDD" class="containe tab-pane active">
                                             <br>
-                                        </div>
-                                        <div id="VIDE1" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="VIDE2" class="containe tab-pane fade">
-                                            <br>
+                                            <h1>Definición</h1>
+                                            <p>Algunos de los usos mas comunes para las integrales dobles y el cálculo de áreas son:</p>
+                                            <p>- Cálculo de masa y momentos de inercia: Las integrales dobles también se utilizan para calcular la masa de un objeto bidimensional o tridimensional con densidad variable. Además, se pueden utilizar para calcular momentos de inercia, que son importantes en el estudio del movimiento rotacional.</p><p>- Cálculo de centroides y centros de masa: Las integrales dobles son fundamentales para encontrar centroides y centros de masa de objetos bidimensionales con densidad variable. Estos conceptos son esenciales en la mecánica y la dinámica de cuerpos sólidos.</p><p>- Resolución de problemas de física: En física, las integrales dobles se utilizan para resolver una variedad de problemas, como el flujo de campos vectoriales, la ley de Gauss para campos eléctricos, la ley de Ampère para campos magnéticos, y para calcular trabajo, potencia y otras cantidades físicas.</p><p>- Teoría de probabilidad y estadística: En estadística, las integrales dobles se utilizan en la teoría de la probabilidad para calcular probabilidades conjuntas de eventos que están definidos en dos dimensiones.</p><p>- Problemas de flujo y campos vectoriales: Las integrales dobles también se utilizan para calcular flujos a través de superficies en campos vectoriales, como en la ley de flujo de Gauss en cálculo vectorial.</p><p>- Modelado de fenómenos físicos y naturales: Las integrales dobles son esenciales en el modelado matemático de una amplia variedad de fenómenos físicos y naturales, como la distribución de temperatura, la difusión de sustancias químicas, el flujo de fluidos, entre otros.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -157,31 +169,21 @@
                                     <div class="tab-content" style="width:100%">
                                         <div id="DRD" class="containe tab-pane active">
                                             <br>
+                                            <h1>Definiciones</h1>
+                                            <p>Dentro de las regiones que se pueden evaluar con una integral doble, podemos encontrar dos tipos de regiones:</p><p>Región de Tipo 1</p><p>En una región de tipo 1, la región R está definida por a≤x≤b y g1(x)≤y≤g2(x), donde a y b son constantes y g1(x) y g2(x) son funciones continuas en el intervalo [a,b]. En otras palabras, la región está encerrada entre dos curvas verticales y limitada por los límites x=a y x=b. La integral doble sobre una región de tipo 1 se puede expresar como:</p><img src="/images/rg1.png" class="examples"><p>Región de Tipo 2</p><p>En una región de tipo 2, la región R está definida por c≤y≤d y h1(y)≤x≤h2(y), donde c y d son constantes y h1(y) y h2(y) son funciones continuas en el intervalo [c,d]. La región está encerrada entre dos curvas horizontales y limitada por los límites y=c y y=d. La integral doble sobre una región de tipo 2 se puede expresar como: </p><img src="/images/rg2.png" class="examples"><p>En conclusión, las regiones influyen unicamente sobre que eje es sobre el que se busca obtener el valor de la área</p>
                                         </div>
-                                        <div id="DRE1" class="containe tab-pane active">
+                                        <div id="DRE1" class="containe tab-pane">
                                             <br>
+                                            <h1>Ejemplos</h1>
+                                            <h2>Region de Tipo 1</h2>
+                                            <p>Supongamos que queremos calcular la integral doble de la función f(x,y)=x+y sobre la región encerrada por las curvas y=x2 y y=2x en el intervalo [0,2]. Primero, graficamos las curvas y=x2 y y=2x, y encontramos los puntos de intersección, que son x=0, x=1, y x=2. La región R está definida por 0≤x≤2 y x2≤y≤2x.</p><p>La integral doble sobre esta región se puede calcular como:</p><img src="/images/rg3.png" class="examples">
+                                            <h2>Region de Tipo 2</h2>
+                                            <p>Supongamos que queremos calcular la integral doble de la función f(x,y)=xy sobre la región encerrada por las curvas x=y^2 y x=4 en el intervalo [0,2]. Graficamos las curvas 2x=y^2 y x=4 para encontrar los puntos de intersección, que son y=0, y=1, y y=−1. La región R está definida por 0≤y≤1 y y^2≤x≤4.</p><p>La integral doble sobre esta región se puede calcular como:</p><img src="/images/rg4.png" class="examples">
                                         </div>
                                         <div id="DRE2" class="containe tab-pane fade">
                                             <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="RF" class="containe tab-pane">
-                                    <br>
-                                    <ul class="nav nav-tabs" role="tablist" >
-                                        <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#RFD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RFE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RFE2">Ejercicios</a></li>
-                                    </ul>
-                                    <div class="tab-content" style="width:100%">
-                                        <div id="RFD" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="RFE1" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="RFE2" class="containe tab-pane fade">
-                                            <br>
+                                            <h1>Ejercicios</h1>
+                                            <p>Realiza las siguientes indicaciones:</p><img src="/images/rg5.png" style="width:80%; margin-left:12%">
                                         </div>
                                     </div>
                                 </div>
@@ -236,12 +238,10 @@
                                 </li>
                                 <br>
                                 <li>
-                                    <a href="/calculoFuncionesVectoriales">Vector gradiente <br>y Derivada Direccional</a>
+                                    <a href="/vectorGradiente">Vector gradiente <br>y Derivada Direccional</a>
                                 </li>
                                 <br>
-                                <li>
-                                    <a href="/funcionesMultivariables">Extremos de Funciones<br> Multivariables</a>
-                                </li>
+
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">

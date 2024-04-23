@@ -24,9 +24,11 @@
             a:hover{
                 color:#0167bb;
             }
-            a.listheader{
-                color:#000
+            a.listheader:hover{
+                color:#0167bb;
+                background:#fff;
             }
+
             .card{
                 width: 98%;
                 border-style: solid;
@@ -46,6 +48,7 @@
                 font-family: Montserrat;
                 font-size: 16px; 
                 padding: 10px 10px;  
+                background-color: #202020; 
             }
             .bodyMobile{
                 display: block;
@@ -54,6 +57,24 @@
                 transition: 0s;
                 padding-top: 60px;
                 background-color: #141931; 
+            }
+            h1{
+                color:#fff;
+                text-align: center;
+            }
+            p{
+                margin: 30px 80px;
+                color:#fff;
+                font-size: 30px;
+                text-align: justify;
+            }
+            img.examples{
+                width:40%;
+                margin:30px 35%;
+            }
+            img.exercises{
+                width:50%;
+                margin:30px 15%;
             }
         </style>
     </head>
@@ -95,7 +116,6 @@
                                 <div class="dropdown-menu dropdown-menu-end" style="background-color: #141931;" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/derivadaParcial">Derivada Parcial</a>
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/vectorGradiente">Vector gradiente y<br> Derivada Direccional</a>
-                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/funcionesMultivariables">Extremos de <br>Funciones Multivariables</a>
                                 </div>
                             </li>
                         </ul>
@@ -124,7 +144,6 @@
                         <div class="card-body">
                             <ul class="nav nav-tabs" role="tablist" >
                                 <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VID">Integral de Línea</a></li>
-                                <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DR">Métodos de Solución</a></li>
                             </ul>
                             <div class="tab-content" style="width:100%">
                                 <div id="VID" class="containe tab-pane active">
@@ -137,31 +156,18 @@
                                     <div class="tab-content" style="width:100%">
                                         <div id="VIDD" class="containe tab-pane active">
                                             <br>
+                                            <h1>Definición</h1>
+                                            <p>La integral de línea es un concepto importante en el cálculo vectorial que generaliza el concepto de integral definida de una función escalar a lo largo de una curva en el espacio tridimensional. Mientras que la integral definida en una dimensión se realiza a lo largo de un intervalo en el eje x, la integral de línea se realiza a lo largo de una curva en el espacio tridimensional.</p><p>Formalmente, si tenemos una función vectorial F(x,y,z)=⟨P(x,y,z),Q(x,y,z),R(x,y,z)⟩ y una curva C definida por un vector de posición r(t)=⟨x(t),y(t),z(t)⟩, donde a≤t≤b, entonces la integral de línea de F a lo largo de C se denota como:</p><img src="/images/il1.png" class="examples">
                                         </div>
-                                        <div id="VIDE1" class="containe tab-pane active">
+                                        <div id="VIDE1" class="containe tab-pane">
                                             <br>
+                                            <h1>Ejemplo</h1>
+                                            <p>Debido a la complejidad de este tema, ChatGPT nos dara una explicación paso por paso:</p><img src="/images/il2.png" class="examples"><img src="/images/il3.png" class="examples"><p>Posteriormente de realizar la integración mostrada por ChatGPT, este nos da el resultado el cual, es el mismo que la integral de linea que seria: <img src="/images/il4.png"></p>
                                         </div>
                                         <div id="VIDE2" class="containe tab-pane fade">
                                             <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="DR" class="containe tab-pane">
-                                    <br>
-                                    <ul class="nav nav-tabs" role="tablist" >
-                                        <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#DRD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DRE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DRE2">Ejercicios</a></li>
-                                    </ul>
-                                    <div class="tab-content" style="width:100%">
-                                        <div id="DRD" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="DRE1" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="DRE2" class="containe tab-pane fade">
-                                            <br>
+                                            <h1>Ejercicios</h1>
+                                            <p>Realiza los ejercicios que se muestran a continuación:</p><p>Ejercicio 1:</p><img src="/images/il5.png" class="exercises"><p>Ejercicio 2:</p><img src="/images/il6.png" class="exercises">
                                         </div>
                                     </div>
                                 </div>
@@ -219,9 +225,7 @@
                                     <a href="/vectorGradiente">Vector gradiente <br>y Derivada Direccional</a>
                                 </li>
                                 <br>
-                                <li>
-                                    <a href="/funcionesMultivariables">Extremos de Funciones<br> Multivariables</a>
-                                </li>
+
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">

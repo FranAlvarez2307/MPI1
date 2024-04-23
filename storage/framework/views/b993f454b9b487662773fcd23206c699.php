@@ -24,9 +24,11 @@
             a:hover{
                 color:#0167bb;
             }
-            a.listheader{
-                color:#000
+            a.listheader:hover{
+                color:#0167bb;
+                background:#fff;
             }
+
             .card{
                 width: 98%;
                 border-style: solid;
@@ -46,6 +48,7 @@
                 font-family: Montserrat;
                 font-size: 16px; 
                 padding: 10px 10px;  
+                background-color: #202020; 
             }
             .bodyMobile{
                 display: block;
@@ -54,6 +57,20 @@
                 transition: 0s;
                 padding-top: 60px;
                 background-color: #141931; 
+            }
+            h1{
+                color:#fff;
+                text-align: center;
+            }
+            p{
+                margin: 30px 80px;
+                color:#fff;
+                font-size: 30px;
+                text-align: justify;
+            }
+            img.examples{
+                width:40%;
+                margin:30px 60px
             }
         </style>
     </head>
@@ -94,8 +111,7 @@
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-end" style="background-color: #141931;" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/derivadaParcial">Derivada Parcial</a>
-                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/calculoFuncionesVectoriales">Vector gradiente y<br> Derivada Direccional</a>
-                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/funcionesMultivariables">Extremos de <br>Funciones Multivariables</a>
+                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/vectorGradiente">Vector gradiente y<br> Derivada Direccional</a>
                                 </div>
                             </li>
                         </ul>
@@ -132,18 +148,12 @@
                                     <br>
                                     <ul class="nav nav-tabs" role="tablist" >
                                         <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VIDD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#VIDE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#VIDE2">Ejercicios</a></li>
                                     </ul>
                                     <div class="tab-content" style="width:100%">
                                         <div id="VIDD" class="containe tab-pane active">
                                             <br>
-                                        </div>
-                                        <div id="VIDE1" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="VIDE2" class="containe tab-pane fade">
-                                            <br>
+                                            <h1>Definición de las funciones paramétricas</h1>
+                                            <p>Las ecuaciones paramétricas son una forma alternativa de representar curvas y superficies en el plano o en el espacio tridimensional. En lugar de describir una relación directa entre x y y (o x, y y z), las ecuaciones paramétricas describen cómo x, y (y z si es en 3D) varían en función de uno o más parámetros.</p><p>Las ecuaciones paramétricas son útiles en muchas situaciones, especialmente cuando se trata de describir trayectorias de objetos en movimiento, como en la cinemática, o para describir superficies tridimensionales.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -151,18 +161,12 @@
                                     <br>
                                     <ul class="nav nav-tabs" role="tablist" >
                                         <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#DRD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DRE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DRE2">Ejercicios</a></li>
                                     </ul>
                                     <div class="tab-content" style="width:100%">
                                         <div id="DRD" class="containe tab-pane active">
                                             <br>
-                                        </div>
-                                        <div id="DRE1" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="DRE2" class="containe tab-pane fade">
-                                            <br>
+                                            <h1>Conceptos Importantes</h1>
+                                            <p>Dentro de los diferentes conceptos que debemos conocer de una ecuación paramétrica encontramos: </p><p>- Parámetro: En el contexto de las ecuaciones paramétricas, un parámetro es una variable independiente que representa una cantidad que puede variar. Este parámetro se utiliza para describir cómo cambian las coordenadas de un punto en una curva o superficie.</p><p>- Curva Paramétrica: Una curva paramétrica es una curva en el plano o en el espacio tridimensional cuyas coordenadas están definidas por ecuaciones paramétricas. Estas ecuaciones dan las coordenadas x, y (y posiblemente z en 3D) de cada punto de la curva en términos de uno o más parámetros. Al variar el parámetro dentro de un cierto rango, se genera la trayectoria completa de la curva en el espacio.</p><p>- Orientación: En el contexto de las ecuaciones paramétricas, la orientación se refiere a la dirección en la que se "recorre" la curva o la trayectoria definida por las ecuaciones paramétricas. Por ejemplo, si estás describiendo el movimiento de un objeto a lo largo de una trayectoria curva, la orientación indicaría en qué dirección se mueve el objeto a medida que "avanza" a través de los valores de los parámetros.</p><p>- Punto inicial y punto final: En las ecuaciones paramétricas que describen una curva o una trayectoria, el punto inicial y el punto final son los puntos específicos a lo largo de esa trayectoria donde el parámetro alcanza sus valores extremos o límites. Estos puntos pueden ser definidos explícitamente o pueden ser determinados por el rango de valores del parámetro. Por ejemplo, si estás describiendo el movimiento de un objeto en una trayectoria curva, el punto inicial podría ser el lugar donde el objeto comienza su movimiento, mientras que el punto final podría ser donde termina su movimiento.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -170,18 +174,12 @@
                                     <br>
                                     <ul class="nav nav-tabs" role="tablist" >
                                         <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#RFD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RFE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RFE2">Ejercicios</a></li>
                                     </ul>
                                     <div class="tab-content" style="width:100%">
                                         <div id="RFD" class="containe tab-pane active">
                                             <br>
-                                        </div>
-                                        <div id="RFE1" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="RFE2" class="containe tab-pane fade">
-                                            <br>
+                                            <h1>Tipos de Curvas</h1>
+                                            <p>Estas ecuaciones paramétricas suelen estar compuestas por dos funciones, una para la coordenada x y otra para la coordenada y, en función de un parámetro común, generalmente denotado por t, sin embargo, ciertas caracteristicas las vuelven diferentes.</p><p>1. Curvas paramétricas planas simples: Estas son curvas que no se cruzan a sí mismas en ningún punto, es decir, no tienen auto intersecciones. Un ejemplo común de una curva paramétrica plana simple es la trayectoria descrita por un círculo, donde x=r⋅cos(t)  y=r⋅sin(t), donde r es el radio del círculo y t varía en el intervalo [0,2π].</p><p>2. Curvas paramétricas planas cerradas: Estas son curvas que forman una figura cerrada en el plano. Pueden ser simples o no simples.</p><p>a. Cerradas simples: Son curvas que no se cruzan a sí mismas y forman una figura cerrada, como un círculo o una elipse. El trazado completo de la curva no pasa dos veces por el mismo punto.</p><p>b. Cerradas,pero no simples: Estas son curvas que se cierran sobre sí mismas, pero tienen auto intersecciones. Un ejemplo común es la figura de una lemniscata, como la curva de Bernoulli, que es descrita por las ecuaciones paramétricas x=a⋅cos(t) y=a⋅sin(2t), donde a es una constante.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -236,12 +234,10 @@
                                 </li>
                                 <br>
                                 <li>
-                                    <a href="/calculoFuncionesVectoriales">Vector gradiente <br>y Derivada Direccional</a>
+                                    <a href="/vectorGradiente">Vector gradiente <br>y Derivada Direccional</a>
                                 </li>
                                 <br>
-                                <li>
-                                    <a href="/funcionesMultivariables">Extremos de Funciones<br> Multivariables</a>
-                                </li>
+
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">

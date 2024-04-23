@@ -24,9 +24,11 @@
             a:hover{
                 color:#0167bb;
             }
-            a.listheader{
-                color:#000
+            a.listheader:hover{
+                color:#0167bb;
+                background:#fff;
             }
+
             .card{
                 width: 98%;
                 border-style: solid;
@@ -46,6 +48,7 @@
                 font-family: Montserrat;
                 font-size: 16px; 
                 padding: 10px 10px;  
+                background-color: #202020; 
             }
             .bodyMobile{
                 display: block;
@@ -54,6 +57,20 @@
                 transition: 0s;
                 padding-top: 60px;
                 background-color: #141931; 
+            }
+            h1{
+                color:#fff;
+                text-align: center;
+            }
+            p{
+                margin: 30px 80px;
+                color:#fff;
+                font-size: 30px;
+                text-align: justify;
+            }
+            img.examples{
+                width:40%;
+                margin:30px 60px
             }
         </style>
     </head>
@@ -95,7 +112,6 @@
                                 <div class="dropdown-menu dropdown-menu-end" style="background-color: #141931;" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/derivadaParcial">Derivada Parcial</a>
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/vectorGradiente">Vector gradiente y<br> Derivada Direccional</a>
-                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/funcionesMultivariables">Extremos de <br>Funciones Multivariables</a>
                                 </div>
                             </li>
                         </ul>
@@ -122,8 +138,7 @@
                         </div>
                         <div class="card-body">
                             <ul class="nav nav-tabs" role="tablist" >
-                                <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VID">Vector Gradiente</a></li>
-                                <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DR">Derivada Direccional</a></li>
+                                <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VID">Vector Gradiente y Derivada Dericcional</a></li>
                             </ul>
                             <div class="tab-content" style="width:100%">
                                 <div id="VID" class="containe tab-pane active">
@@ -136,31 +151,18 @@
                                     <div class="tab-content" style="width:100%">
                                         <div id="VIDD" class="containe tab-pane active">
                                             <br>
+                                            <h1>Definición</h1>
+                                            <p>El vector gradiente es un concepto fundamental en el cálculo vectorial que se utiliza para representar la dirección y la tasa de cambio máxima de una función escalar multivariable en un punto dado. Formalmente, el gradiente de una función escalar f(x1,x2,…,xn), denotada como ∇f o grad(f), es un vector cuyas componentes son las derivadas parciales de f respecto a cada una de las variables independientes.<br><br>El gradiente se define como:<img src="/images/vg1.png"><br><br>El vector gradiente apunta en la dirección de la tasa de cambio máxima de la función en un punto dado y su magnitud indica la magnitud de esta tasa de cambio máxima.<br><br>Otro concepto importante relacionado con el gradiente, es la Derivada Direccional. La derivada direccional de una función escalar f en un punto P en una dirección dada v es la tasa de cambio instantánea de f en la dirección v en el punto P. Se denota como: <img src="/images/vg2.png"><br><br>La fórmula para la derivada direccional es: <img src="/images/vg3.png"><br><br>Donde ∇f es el vector gradiente de f en el punto P y v representa el producto punto entre vectores. <br>La derivada direccional se interpreta como la tasa de cambio instantánea de f en la dirección de v en el punto P.</p>
                                         </div>
-                                        <div id="VIDE1" class="containe tab-pane active">
+                                        <div id="VIDE1" class="containe tab-pane">
                                             <br>
+                                            <h1>Ejemplo</h1>
+                                            <p>Para este ejemplo tenemos la siguiente función escalar <img src="/images/vg4.png"> y queremos calcular el gradiente en el punto (2,-1).</p><p>1. El primer paso es obtener las multiples derivadas multiples de la función, las cuales serian:<br><br><img src="/images/vg5.png" style="margin-left:45%"> </p><p>2. El segundo paso es evaluar estas derivadas en el punto (2,-1)<br><br><img src="/images/vg6.png" style="margin-left:42%"></p><p>Finalmente con estos valores obtenidos podemos decir que el valor del gradiente es el siguiente: ∇f = (4,3).</p><p>Posteriormente si queremos calcular la derivada direccional de la misma función en el punto (2,-1) en dirección del vector v = (1,2), seguimos los siguientes pasos:</p><p>1. El primer paso es obtener el gradiente, que como ya lo conozcemos es (4,3)</p><p>2. El segundo paso es normalizar el vector v para obtener el vector unitario en la dirección de v:<br><br><img src="/images/vg7.png" style="margin-left:38%"></p><p>3. El tercer paso es calcular la derivada direccional usando la formula <img src="/images/vg8.png" style="margin-left:42%"><br><br><img src="/images/vg9.png" style="margin-left:25%"></p><p>Por lo cual, podemos concluir, que la derivada direccional de la formula <img src="/images/vg4.png"> en el punto (2,-1) en la dirección del vector v = (1,2) es <img src="/images/vg10.png"></p>
                                         </div>
                                         <div id="VIDE2" class="containe tab-pane fade">
                                             <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="DR" class="containe tab-pane">
-                                    <br>
-                                    <ul class="nav nav-tabs" role="tablist" >
-                                        <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#DRD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DRE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DRE2">Ejercicios</a></li>
-                                    </ul>
-                                    <div class="tab-content" style="width:100%">
-                                        <div id="DRD" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="DRE1" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="DRE2" class="containe tab-pane fade">
-                                            <br>
+                                            <h1>Ejercicios</h1>
+                                            <p>- Ejercicio 1:<br><img src="/images/vg11.png"></p><p>- Ejercicio 2:<br><img src="/images/vg12.png"> </p>
                                         </div>
                                     </div>
                                 </div>
@@ -218,9 +220,7 @@
                                     <a href="/vectorGradiente">Vector gradiente <br>y Derivada Direccional</a>
                                 </li>
                                 <br>
-                                <li>
-                                    <a href="/funcionesMultivariables">Extremos de Funciones<br> Multivariables</a>
-                                </li>
+
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">

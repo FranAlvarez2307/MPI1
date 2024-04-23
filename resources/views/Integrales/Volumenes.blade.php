@@ -24,9 +24,11 @@
             a:hover{
                 color:#0167bb;
             }
-            a.listheader{
-                color:#000
+            a.listheader:hover{
+                color:#0167bb;
+                background:#fff;
             }
+
             .card{
                 width: 98%;
                 border-style: solid;
@@ -46,6 +48,7 @@
                 font-family: Montserrat;
                 font-size: 16px; 
                 padding: 10px 10px;  
+                background-color: #202020; 
             }
             .bodyMobile{
                 display: block;
@@ -54,6 +57,20 @@
                 transition: 0s;
                 padding-top: 60px;
                 background-color: #141931; 
+            }
+            h1{
+                color:#fff;
+                text-align: center;
+            }
+            p{
+                margin: 30px 80px;
+                color:#fff;
+                font-size: 30px;
+                text-align: justify;
+            }
+            img.examples{
+                width:40%;
+                margin:30px 30%;
             }
         </style>
     </head>
@@ -95,7 +112,6 @@
                                 <div class="dropdown-menu dropdown-menu-end" style="background-color: #141931;" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/derivadaParcial">Derivada Parcial</a>
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/vectorGradiente">Vector gradiente y<br> Derivada Direccional</a>
-                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/funcionesMultivariables">Extremos de <br>Funciones Multivariables</a>
                                 </div>
                             </li>
                         </ul>
@@ -123,44 +139,30 @@
                         <div class="card-body">
                             <ul class="nav nav-tabs" role="tablist" >
                                 <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VID">Uso de la Integral Triple</a></li>
-                                <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DR">Calculo de volumen</a></li>
                             </ul>
                             <div class="tab-content" style="width:100%">
                                 <div id="VID" class="containe tab-pane active">
                                     <br>
                                     <ul class="nav nav-tabs" role="tablist" >
                                         <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VIDD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#VIDE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#VIDE2">Ejercicios</a></li>
+                                        <li class="nav-item"><a class="nav-link listheader" data-bs-toggle="tab" href="#VIDD1">Ejemplos</a></li>
+                                        <li class="nav-item"><a class="nav-link listheader" data-bs-toggle="tab" href="#VIDD2">Ejercicios</a></li>
                                     </ul>
                                     <div class="tab-content" style="width:100%">
                                         <div id="VIDD" class="containe tab-pane active">
                                             <br>
+                                            <h1>Definición</h1>
+                                            <p>La utilización de integrales triples se da principalmente para calcular volúmenes, es especialmente útil en situaciones donde se tienen sólidos con formas complicadas o donde la geometría no es fácilmente representable mediante fórmulas simples. Algunos casos comunes en los que se puede aplicar esta tecnica son los siguientes:</p><p>- Sólidos con formas irregulares: Cuando el objeto no tiene una forma geométrica estándar como cubos, cilindros o esferas, sino que es una combinación compleja de curvas o superficies, las integrales triples pueden ser útiles para encontrar su volumen.</p><p>- Regiones en el espacio definidas por ecuaciones: Si tienes una región en el espacio que está definida por ecuaciones (como en el ejemplo anterior del paraboloide), las integrales triples pueden ayudarte a encontrar el volumen de esa región.</p><p>- Aplicaciones en física e ingeniería: En problemas de física o ingeniería donde necesitas calcular el volumen de objetos tridimensionales como sólidos de revolución, regiones de densidad variable, o volúmenes de fluidos, las integrales triples son una herramienta esencial.</p><p>- Probabilidad y estadística: En algunos casos en estadística y probabilidad, especialmente en problemas que involucran distribuciones de probabilidad conjuntas para variables aleatorias continuas en tres dimensiones, las integrales triples pueden ser útiles para calcular probabilidades o encontrar momentos.</p>
                                         </div>
-                                        <div id="VIDE1" class="containe tab-pane active">
+                                        <div id="VIDD1" class="containe tab-pane">
                                             <br>
+                                            <h1>Ejemplo</h1>
+                                            <p>Basicamente el proceso de resolución es el mismo que cuando resolvemos integrales multiples ya que el resultado es un volumen. Lo podemos observar en el siguiente ejemplo, supongamos que queremos encontrar el volumen de un objeto delimitado por los planos x=0, y=0, z=0, x=1, y=2, y z=3, y la función de densidad es f(x,y,z)=xyz. Entonces, el volumen V del objeto se puede calcular mediante la integral triple:</p><img src="/images/v1.png" class="examples"><p>A continuación se muestra como se resuelve por partes la integral hasta obtener el valor del volumen</p><img src="/images/v2.png" class="examples"><p>Con lo que podemos observar que al final el Volumen es 9.</p>
                                         </div>
-                                        <div id="VIDE2" class="containe tab-pane fade">
+                                        <div id="VIDD2" class="containe tab-pane">
                                             <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="DR" class="containe tab-pane">
-                                    <br>
-                                    <ul class="nav nav-tabs" role="tablist" >
-                                        <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#DRD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DRE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DRE2">Ejercicios</a></li>
-                                    </ul>
-                                    <div class="tab-content" style="width:100%">
-                                        <div id="DRD" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="DRE1" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="DRE2" class="containe tab-pane fade">
-                                            <br>
+                                            <h1>Ejercicio</h1>
+                                            <p>Resuelve el siguiente ejercicio y obten el volumen del cubo:</p><img src="/images/v3.png" style="width:80%; margin-left:10%">
                                         </div>
                                     </div>
                                 </div>
@@ -218,9 +220,7 @@
                                     <a href="/vectorGradiente">Vector gradiente <br>y Derivada Direccional</a>
                                 </li>
                                 <br>
-                                <li>
-                                    <a href="/funcionesMultivariables">Extremos de Funciones<br> Multivariables</a>
-                                </li>
+
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">

@@ -24,9 +24,11 @@
             a:hover{
                 color:#0167bb;
             }
-            a.listheader{
-                color:#000
+            a.listheader:hover{
+                color:#0167bb;
+                background:#fff;
             }
+
             .card{
                 width: 98%;
                 border-style: solid;
@@ -46,6 +48,7 @@
                 font-family: Montserrat;
                 font-size: 16px; 
                 padding: 10px 10px;  
+                background-color: #202020; 
             }
             .bodyMobile{
                 display: block;
@@ -54,6 +57,20 @@
                 transition: 0s;
                 padding-top: 60px;
                 background-color: #141931; 
+            }
+            h1{
+                color:#fff;
+                text-align: center;
+            }
+            p{
+                margin: 30px 80px;
+                color:#fff;
+                font-size: 30px;
+                text-align: justify;
+            }
+            img.examples{
+                width:60%;
+                margin:30px 60px
             }
         </style>
     </head>
@@ -94,8 +111,7 @@
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-end" style="background-color: #141931;" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/derivadaParcial">Derivada Parcial</a>
-                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/calculoFuncionesVectoriales">Vector gradiente y<br> Derivada Direccional</a>
-                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/funcionesMultivariables">Extremos de <br>Funciones Multivariables</a>
+                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/vectorGradiente">Vector gradiente y<br> Derivada Direccional</a>
                                 </div>
                             </li>
                         </ul>
@@ -124,7 +140,6 @@
                         <div class="card-body">
                             <ul class="nav nav-tabs" role="tablist" >
                                 <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VID">Deriavada Parcial</a></li>
-                                <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DR">Contrucción Geométrica</a></li>
                                 <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RF">Reglas de la Derivada Parcial</a></li>
                             </ul>
                             <div class="tab-content" style="width:100%">
@@ -138,31 +153,22 @@
                                     <div class="tab-content" style="width:100%">
                                         <div id="VIDD" class="containe tab-pane active">
                                             <br>
+                                            <h1>Definición</h1>
+                                            <p>Este tipo de derivada se realiza dada una función, dependiendo de la función y la variable a partir de la cual se nos indique la realizar la derivada, se realiza unicamente una parte de la derivada. Por ejemplo, dando una función f(x,y) de dos variables, la derivada parcial de f respecto a x, denotada como <img src="/images/Drv1.png"> , se define como la derivada de f con respecto a x mientras se mantiene y constante. Similarmente, la derivada parcial de f respecto a y, denotada como <img src="/images/Drv1.png"> , se define como la derivada de f con respecto a y mientras se mantiene x constante.</p>
                                         </div>
-                                        <div id="VIDE1" class="containe tab-pane active">
+                                        <div id="VIDE1" class="containe tab-pane">
                                             <br>
+                                            <h1>Ejemplo</h1>
+                                            <p>Supongamos que contamos con la siguiente función: <img src="/images/Drv5.png"></p><p>Como la función cuenta con dos derivadas a partir de las cuales de puede derivar, la función cuenta con dos posibles derivadas parciales:</p><p><img src="/images/Drv3.png" class="examples"><img src="/images/Drv4.png" class="examples"></p><p>En ambos casos cuando derivamos, podemos observar que se realiza la derivada de tal manera, que la variable que es distinta a que se utiliza para derivar, se trata como una simple contante, dejandola sin modificar cuando derivamos o eliminadola cuando no se encuentra acompañada con la variable que deriva.</p>
                                         </div>
                                         <div id="VIDE2" class="containe tab-pane fade">
                                             <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="DR" class="containe tab-pane">
-                                    <br>
-                                    <ul class="nav nav-tabs" role="tablist" >
-                                        <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#DRD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DRE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DRE2">Ejercicios</a></li>
-                                    </ul>
-                                    <div class="tab-content" style="width:100%">
-                                        <div id="DRD" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="DRE1" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="DRE2" class="containe tab-pane fade">
-                                            <br>
+                                            <h1>Ejercicios</h1>
+                                            <p>1.<img src="/images/Drv6.png" class="examples"></p>
+                                            <p>2.<img src="/images/Drv7.png" class="examples"></p>
+                                            <p>3.<img src="/images/Drv8.png" class="examples"></p>
+                                            <p>4.<img src="/images/Drv9.png" class="examples"></p>
+                                            <p>5.<img src="/images/Drv10.png" class="examples"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -171,17 +177,25 @@
                                     <ul class="nav nav-tabs" role="tablist" >
                                         <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#RFD">Definición</a></li>
                                         <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RFE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RFE2">Ejercicios</a></li>
                                     </ul>
                                     <div class="tab-content" style="width:100%">
                                         <div id="RFD" class="containe tab-pane active">
                                             <br>
+                                            <h1>Descripción de las reglas:</h1>
+                                            <p>-Leyes de la diferenciación ordinaria: Estas leyes son similares a las reglas básicas de derivación del cálculo univariable. Incluyen la regla de la potencia, la regla del producto, la regla del cociente y la regla de la suma y resta. Estas reglas se aplican a funciones de varias variables, y permiten calcular derivadas parciales de manera sistemática.<br><br>-Derivadas parciales de orden superior: Al igual que en el cálculo univariable, en el cálculo de varias variables también podemos tomar derivadas de derivadas. Por ejemplo, si tomamos la derivada parcial de una función dos veces respecto a la misma variable, obtenemos la segunda derivada parcial respecto a esa variable.<br><br>-Diferenciación parcial implícita: En ocasiones, puede ser necesario calcular derivadas parciales de una función implícita, donde las variables no están expresadas explícitamente en términos de la función. En estos casos, se utiliza la diferenciación parcial implícita para calcular las derivadas parciales de manera indirecta.<br><br>-Regla de la cadena: Esta regla es esencial para calcular derivadas de funciones compuestas. Permite calcular la derivada de una función compuesta tomando en cuenta cómo cambian las variables intermedias. La regla de la cadena es especialmente útil cuando se trata de funciones de varias variables.</p>
                                         </div>
                                         <div id="RFE1" class="containe tab-pane active">
                                             <br>
-                                        </div>
-                                        <div id="RFE2" class="containe tab-pane fade">
-                                            <br>
+                                            <h1>Descripción de las reglas:</h1>
+                                            <p>Para poder mostrar de una manera mas visual tenemos los siguientes ejemplos:</p>
+                                            <p>1. Leyes de la diferenciación Ordinaria</p>
+                                            <p>1.1 <img src="/images/Drv11.png" class="examples"></p>
+                                            <p>1.2 <img src="/images/Drv12.png" class="examples"></p>
+                                            <p>1.3 <img src="/images/Drv13.png" class="examples"></p>
+                                            <p>1.4 <img src="/images/Drv14.png" class="examples"></p>
+                                            <p>2. <img src="/images/Drv15.png" class="examples"></p>
+                                            <p>3. <img src="/images/Drv16.png" class="examples"></p>
+                                            <p>4. <img src="/images/Drv17.png" class="examples"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -236,12 +250,10 @@
                                 </li>
                                 <br>
                                 <li>
-                                    <a href="/calculoFuncionesVectoriales">Vector gradiente <br>y Derivada Direccional</a>
+                                    <a href="/vectorGradiente">Vector gradiente <br>y Derivada Direccional</a>
                                 </li>
                                 <br>
-                                <li>
-                                    <a href="/funcionesMultivariables">Extremos de Funciones<br> Multivariables</a>
-                                </li>
+
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">

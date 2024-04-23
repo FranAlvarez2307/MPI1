@@ -24,9 +24,11 @@
             a:hover{
                 color:#0167bb;
             }
-            a.listheader{
-                color:#000
+            a.listheader:hover{
+                color:#0167bb;
+                background:#fff;
             }
+
             .card{
                 width: 98%;
                 border-style: solid;
@@ -46,6 +48,7 @@
                 font-family: Montserrat;
                 font-size: 16px; 
                 padding: 10px 10px;  
+                background-color: #202020; 
             }
             .bodyMobile{
                 display: block;
@@ -54,6 +57,20 @@
                 transition: 0s;
                 padding-top: 60px;
                 background-color: #141931; 
+            }
+            h1{
+                color:#fff;
+                text-align: center;
+            }
+            p{
+                margin: 30px 80px;
+                color:#fff;
+                font-size: 30px;
+                text-align: justify;
+            }
+            img.examples{
+                width:40%;
+                margin:30px 60px
             }
         </style>
     </head>
@@ -95,7 +112,6 @@
                                 <div class="dropdown-menu dropdown-menu-end" style="background-color: #141931;" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/derivadaParcial">Derivada Parcial</a>
                                     <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/vectorGradiente">Vector gradiente y<br> Derivada Direccional</a>
-                                    <a class="dropdown-item" style=" font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;" onMouseOver="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #141931; background-color: #fff;'" onMouseOut="this.style.cssText=' font-family: Montserrat; font-weight: 500; color: #fff; background-color: #141931;'" href="/funcionesMultivariables">Extremos de <br>Funciones Multivariables</a>
                                 </div>
                             </li>
                         </ul>
@@ -123,64 +139,18 @@
                         <div class="card-body">
                             <ul class="nav nav-tabs" role="tablist" >
                                 <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VID">Función Vectorial</a></li>
-                                <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DR">Límites en Funciones Vectoriales</a></li>
-                                <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RF">Reglas Basicas de Funciones Vectoriales</a></li>
                             </ul>
                             <div class="tab-content" style="width:100%">
                                 <div id="VID" class="containe tab-pane active">
                                     <br>
                                     <ul class="nav nav-tabs" role="tablist" >
                                         <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#VIDD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#VIDE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#VIDE2">Ejercicios</a></li>
                                     </ul>
                                     <div class="tab-content" style="width:100%">
                                         <div id="VIDD" class="containe tab-pane active">
                                             <br>
-                                        </div>
-                                        <div id="VIDE1" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="VIDE2" class="containe tab-pane fade">
-                                            <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="DR" class="containe tab-pane">
-                                    <br>
-                                    <ul class="nav nav-tabs" role="tablist" >
-                                        <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#DRD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DRE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#DRE2">Ejercicios</a></li>
-                                    </ul>
-                                    <div class="tab-content" style="width:100%">
-                                        <div id="DRD" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="DRE1" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="DRE2" class="containe tab-pane fade">
-                                            <br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="RF" class="containe tab-pane">
-                                    <br>
-                                    <ul class="nav nav-tabs" role="tablist" >
-                                        <li class="nav-item"><a class="nav-link active listheader" data-bs-toggle="tab" href="#RFD">Definición</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RFE1">Ejemplos</a></li>
-                                        <li class="nav-item"><a class="nav-link  listheader" data-bs-toggle="tab" href="#RFE2">Ejercicios</a></li>
-                                    </ul>
-                                    <div class="tab-content" style="width:100%">
-                                        <div id="RFD" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="RFE1" class="containe tab-pane active">
-                                            <br>
-                                        </div>
-                                        <div id="RFE2" class="containe tab-pane fade">
-                                            <br>
+                                            <h1>Definición</h1>
+                                            <p>Una función vectorial es una función que asigna a cada valor de un dominio un vector en un espacio vectorial. Formalmente, una función vectorial se puede expresar como ⟩f(t)=⟨f1(t),f2(t),…,fn(t)⟩, donde f es la función vectorial, t es el parámetro o variable independiente, y f1(t),f2(t),…,fn(t) son funciones escalares que definen las componentes del vector en un espacio vectorial Rn. Los siguientes conceptos son importantes para comprenderlos:</p><p>- Propiedades de los límites de funciones vectoriales y criterios de continuidad: Las propiedades de los límites de funciones vectoriales son similares a las de las funciones escalares. Para que una función vectorial f(t) tenga límite L cuando t tiende a un valor c, cada componente de f(t) debe tener un límite que exista y sea igual a la componente correspondiente de L. Para la continuidad de una función vectorial, todas sus componentes deben ser continuas en el punto de interés.</p><p>Proceso de cálculo de límites en funciones vectoriales: Para calcular el límite de una función vectorial f(t) cuando t tiende a un valor c, se calcula el límite de cada componente de f(t) por separado. Si todas las componentes tienen límites existentes y son iguales, entonces el límite de f(t) existe y es igual al vector formado por los límites de las componentes.</p><p>Propiedades de la diferenciación en funciones vectoriales: Las funciones vectoriales se pueden diferenciar componente por componente. Si f(t)=⟨f1(t),f2(t),…,fn(t)⟩, entonces la derivada de f(t) con respecto a t es f′(t)=⟨f1′(t),f2′(t),…,fn′(t)⟩, donde f1′(t),f2′(t),…,fn′(t) son las derivadas de las componentes respectivas de f(t) con respecto a t.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -238,9 +208,7 @@
                                     <a href="/vectorGradiente">Vector gradiente <br>y Derivada Direccional</a>
                                 </li>
                                 <br>
-                                <li>
-                                    <a href="/funcionesMultivariables">Extremos de Funciones<br> Multivariables</a>
-                                </li>
+
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
